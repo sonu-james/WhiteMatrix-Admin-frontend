@@ -1,0 +1,194 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* body{
+    background-color: rgb(224, 239, 237);
+    font-family: "Poppins", sans-serif;
+} */
+.inbound-container {
+  width: 100%;
+  height: 75vh;
+  /* font-family: "Poppins", sans-serif; */
+
+}
+
+.inbound-table-container {
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 2%;
+  /* display: flex;
+   align-items: center;
+   justify-content: center; */
+  width: 95%;
+  /* height: 500px; */
+  border-radius: 10px;
+  box-shadow: 10px;
+  padding: 10px;
+  max-height: 500px;
+  overflow-y: scroll;
+
+
+}
+
+.inbound-details {
+  border-collapse: collapse;
+  width: 100%;
+  /* padding: 20px; */
+
+}
+
+thead,
+td,
+th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+
+  /* white-space: wrap;
+    width: 30px; */
+
+}
+
+.inbound-img img {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(202, 245, 245);
+  border-radius: 5px;
+  margin: 3px;
+  /* padding-right: 3px; */
+
+}
+
+.inbound-profile-container {
+  display: flex;
+}
+
+td {
+  font-size: small;
+  color: black;
+  font-weight: 600;
+
+
+}
+
+table th {
+  color: gray;
+  position: sticky;
+  top: 0;
+  background-color: rgb(240, 246, 244);
+
+}
+
+#inbound-profile-name {
+  border-bottom: none;
+  overflow-wrap: break-word;
+  width: 100px;
+  margin-top: 11px;
+}
+
+.inbound-heading {
+  margin-top: 5%;
+  margin-left: 21%;
+  color: rgba(17, 151, 224, 0.951);
+}
+
+.inbound-address {
+  overflow-wrap: break-word;
+  width: 70px;
+}
+
+/* Dark overlay background */
+.inbound-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup container styling */
+.inbound-date-picker-popup {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button styling */
+.inbound-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Schedule button styling */
+.inbound-schedule-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color:  rgba(13, 97, 142, 0.951);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.inbound-schedule-button:hover {
+  background-color: rgb(5, 5, 94);
+}
+
+.react-datepicker__header {
+  background-color: #ffffff !important;
+  /* Ensure header background is white */
+  border-bottom: none;
+}
+
+.react-datepicker__time-header {
+  color: #007bff;
+  /* Blue color for time heading */
+  font-weight: bold;
+  margin-bottom: 20px;
+  /* 20px margin below time heading */
+}
+.inbound-selected-date-input{
+  width: 50%;
+  padding: 5px;
+  margin:20px;
+  border-radius: 5px ;
+  border-color: #007bff;
+  font-size: medium;
+  text-align: center;
+  
+}
+h2{
+  color: rgba(26, 120, 170, 0.951);
+}
+.react-datepicker{
+  padding: 8px;
+  width: 80%;
+}
+.react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+  right: 99px;
+  margin-top: 11px;
+
+}
+.react-datepicker__navigation-icon--previous {
+  right: -7px;
+  margin-top: 14px;
+}

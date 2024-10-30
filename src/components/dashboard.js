@@ -30,6 +30,7 @@ import ChangePasswordForm from './ChangePasswordForm';
 import Logo from './assets/images/logo2.png';
 import ViewAcademy from './ViewAcademy';
 import ViewCourses from './ViewCourses';
+import RequestDetails from './RequestDetails';
 
 const Dashboard = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -184,7 +185,7 @@ const Dashboard = () => {
                         </>
                     )}
                     {showRequests && (
-                        <RequestsPopup show={showRequests} closeRequests={closeRequests} />
+                        <RequestDetails show={showRequests} closeRequests={closeRequests} />
                     )}
                 </div>
 

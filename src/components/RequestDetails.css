@@ -1,0 +1,199 @@
+
+/* Popup window styling */
+.popup-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    min-height: 500px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+@media (min-width:1900px) {
+    .popup-window{
+        width: 900px;
+        min-height: 600px;
+    }
+}
+@media (max-width:1500px) {
+    .popup-window{
+        width: 600px;
+        min-height: 400px;
+    }
+}
+@media (max-width:1024px) {
+    .popup-window{
+        width: 500px;
+        min-height: 400px;
+    }
+}
+@media (max-width:768px) {
+    .popup-window{
+        width: 350px;
+        min-height: 400px;
+    }
+}
+.popup-window h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.popup-window ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.popup-window li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.popup-window li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Close button styling */
+.close-button {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #333;
+}
+
+.pending-form button{
+    padding: 10px 20px;
+    background-color: #387CB8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.pending-form h4{
+    margin: 0;
+}
+.tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #9999992e;
+}
+
+.tab-buttons button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.tab-buttons button.active {
+    background-color: transparent;
+    color: #387CB8;
+    border-bottom: 2px solid #387CB8;
+}
+/* confirmationPopup.css */
+.confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-window {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+.confirmation-buttons {
+    margin-top: 20px;
+}
+
+.confirmation-buttons button {
+    margin: 0 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.confirmation-buttons button:nth-child(1){
+    background-color: #387CB8;
+}
+.confirmation-buttons button:nth-child(2){
+    background-color: red;
+}
+/* rejectionReasonPopup.css */
+.rejection-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rejection-window {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 400px;
+}
+
+.rejection-buttons {
+    margin-top: 20px;
+}
+
+.rejection-buttons button {
+    margin: 0 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.rejection-buttons button:nth-child(1){
+    background-color: #387CB8;
+}
+.rejection-buttons button:nth-child(2){
+    background-color: red;
+}
+
+.rejection-window textarea{
+    border: 1px solid #387CB8;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    
+}
+.rejection-window textarea:active{
+    border: 1px solid #387CB8;
+}

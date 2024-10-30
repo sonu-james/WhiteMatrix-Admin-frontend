@@ -1,0 +1,90 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(224, 239, 237);
+    font-family: "Poppins", sans-serif;
+}
+.activity-container{
+    width: 100%;
+   height: 70vh;
+   /* font-family: "Poppins", sans-serif; */
+    
+}
+
+.activity-table-container{
+  background-color: white;
+   margin-top: 2%;
+   margin-left: 20%;
+   /* display: flex;
+   align-items: center;
+   justify-content: center; */
+   width: 79%;
+   /* height: 500px; */
+   border-radius: 10px;
+   box-shadow: 10px;
+   padding: 10px;
+   max-height: 500px;
+   overflow-y: scroll;
+  
+   
+}
+.activity-details{
+   border-collapse: collapse;
+   width: 100%;
+   /* padding: 20px; */
+  
+}
+  thead, td ,th{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+    /* white-space: wrap;
+    width: 30px; */
+    
+  }
+  
+  .activity-img img{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(202, 245, 245);
+    border-radius: 5px;
+    margin: 3px;
+    /* padding-right: 3px; */
+    
+  }
+  .activity-profile-container{
+    display: flex;
+  }
+  td{
+    font-size: small;
+    color:black;
+    font-weight: 600;
+    
+    
+  }
+  table th{
+   color: gray;
+   position:sticky;
+   top: 0;
+   background-color: rgb(240, 246, 244);
+    
+  }
+  #activity-profile-name{
+    border-bottom: none;
+    overflow-wrap: break-word;
+    width: 100px;
+    margin-top: 11px;
+  }
+  .activity-heading{
+    margin-top: 5%;
+    margin-left: 21%;
+    color: rgba(17, 151, 224, 0.951);
+  }
+ .activity-address{
+  overflow-wrap: break-word;
+  width: 70px;
+ }
